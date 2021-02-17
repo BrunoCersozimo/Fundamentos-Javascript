@@ -20,11 +20,24 @@ const carro = {
             numero: 123
         }
     }, 
-    consdutores: [{
+    condutores: [{
         nome: 'Junior',
         idade: 19
     }, {
         nome: 'Ana', 
         idade: 42
-    }]
+    }],
+    calcularValorSeguro: function(){
+        //...
+    }
 }
+
+carro.proprietario.endereco.numero = 1000
+carro['proprietario']['endereco']['logradouro'] = 'Av abc'
+
+
+delete carro.condutores
+delete carro.proprietario.endereco
+delete carro.calcularValorSeguro
+
+console.log(carro)
